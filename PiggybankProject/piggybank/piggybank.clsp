@@ -1,13 +1,12 @@
 (mod (
+    TARGET_AMOUNT
+    CASH_OUT_PUZZLE_HASH
     my_amount
     new_amount
     my_puzzlehash
     )
 
     (include condition_codes.clib)
-
-    (defconstant TARGET_AMOUNT 500)
-    (defconstant CASH_OUT_PUZZLE_HASH 0xcafef00d)
 
     (defun-inline cash_out (CASH_OUT_PUZZLE_HASH my_amount new_amount my_puzzlehash)
         (list 
